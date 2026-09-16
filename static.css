@@ -1,0 +1,46 @@
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 0.75rem;
+  background: rgba(8, 12, 9, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.dialog-overlay[hidden] {
+  display: none;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #172219;
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.rsvp-dialog {
+  position: relative;
+}
+
+.rsvp-dialog > h2 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 2.8rem;
+}
+
+.rsvp-dialog > p:not(.section-label) {
+  color: #686a63;
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body.dialog-open {
+  overflow: hidden;
+}
+
